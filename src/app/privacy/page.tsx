@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { ArrowLeft, Shield, Eye, Database, UserRights, Cookie, Lock } from 'lucide-react'
+import { ArrowLeft, Shield, Eye, Database, UserCheck, Cookie, Lock } from 'lucide-react'
 import Link from 'next/link'
 
 export default function PrivacyPolicy() {
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
                 onClick={() => scrollToSection('user-rights')}
                 className="flex items-center space-x-3 p-3 text-left hover:bg-blue-50 rounded-lg transition-colors"
               >
-                <UserRights className="w-5 h-5 text-purple-600" />
+                <UserCheck className="w-5 h-5 text-purple-600" />
                 <span className="text-gray-700">Hak Pengguna</span>
               </button>
             </div>
@@ -241,7 +241,7 @@ export default function PrivacyPolicy() {
             {/* User Rights */}
             <Card id="user-rights" className="p-8 bg-white shadow-lg">
               <div className="flex items-center space-x-3 mb-4">
-                <UserRights className="w-6 h-6 text-purple-600" />
+                <UserCheck className="w-6 h-6 text-purple-600" />
                 <h2 className="text-2xl font-bold text-gray-900">Hak Anda sebagai Pengguna</h2>
               </div>
               
